@@ -6,7 +6,5 @@ inputs:
     required: true
     default: "0.12.13"
 runs:
-  using: "docker"
-  image: "Dockerfile"
-  args:
-    - ${{ inputs.version }}
+  using: "node12"
+  main: "dist/index.js"

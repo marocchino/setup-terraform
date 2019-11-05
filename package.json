@@ -1,0 +1,31 @@
+{
+  "name": "setup-terraform",
+  "version": "1.0.0",
+  "description": "Set up your GitHub Actions workflow with a specific version of terraform",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js",
+    "package": "ncc build index.js -o dist",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marocchino/setup-terraform.git"
+  },
+  "keywords": [],
+  "author": "marocchino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marocchino/setup-terraform/issues"
+  },
+  "homepage": "https://github.com/marocchino/setup-terraform#readme",
+  "dependencies": {
+    "@actions/core": "^1.1.1",
+    "@actions/tool-cache": "^1.1.2"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.20.5",
+    "eslint": "^6.3.0",
+    "jest": "^24.9.0"
+  }
+}

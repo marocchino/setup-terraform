@@ -14,3 +14,4 @@ jobs:
           version: "0.12.13"
 
       - run: terraform init
+      - run: terraform --version

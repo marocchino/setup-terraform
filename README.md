@@ -1,23 +1,30 @@
-# Hello world docker action
+# setup-terraform
 
-This action prints "Hello World" to the log or "Hello" + the name of a person to greet. To learn how this action was built, see "[Creating a Docker container action](https://help.github.com/en/articles/creating-a-docker-container-action)" in the GitHub Help documentation.
+<p align="left">
+  <a href="https://github.com/marocchino/setup-terraform"><img alt="GitHub Actions status" src="https://github.com/marocchino/setup-terraform/workflows/test/badge.svg"></a>
+</p>
 
-## Inputs
+This action sets up a terraform environment for use in actions by:
 
-### `who-to-greet`
+- optionally downloading and caching a version of Terraform by version and adding to PATH
 
-**Required** The name of the person to greet. Default `"World"`.
+# Usage
 
-## Outputs
+See [action.yml](action.yml)
 
-### `time`
-
-The time we greeted you.
-
-## Example usage
+Basic:
 
 ```yaml
-uses: actions/hello-world-docker-action@master
-with:
-  who-to-greet: 'Mona the Octocat'
+steps:
+  - uses: actions/checkout@master
+  - uses: marocchino/setup-terraform@v1
+    with:
+      version: "0.12.13"
+  - run: terraform fmt
+  - run: terraform init
+  - run: terraform plan
 ```
+
+# License
+
+The scripts and documentation in this project are released under the [MIT License](LICENSE)

@@ -1,15 +1,12 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: "Setup Terraform environment"
+description: "Setup a Terraform environment and add it to the PATH"
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  version: # id of input
+    description: "The terraform version to download (if necessary) and use. Example: 0.12.13"
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+    default: "0.12.13"
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: "docker"
+  image: "Dockerfile"
   args:
-    - ${{ inputs.who-to-greet }}
+    - ${{ inputs.version }}

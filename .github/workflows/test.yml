@@ -1,0 +1,16 @@
+name: test
+on:
+  - push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Install terraform
+        uses: ./
+        with:
+          version: "0.12.13"
+
+      - run: terraform init

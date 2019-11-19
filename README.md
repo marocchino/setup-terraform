@@ -19,10 +19,10 @@ steps:
   - uses: actions/checkout@master
   - uses: marocchino/setup-terraform@v1
     with:
-      version: "0.12.13"
-  - run: terraform fmt
+      version: "0.12.15"
+  - run: terraform fmt -check=true -write=false -diff -recursive
   - run: terraform init
-  - run: terraform plan
+  - run: terraform plan -detailed-exitcode
 ```
 
 # License

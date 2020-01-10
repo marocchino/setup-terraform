@@ -21,7 +21,7 @@
   "homepage": "https://github.com/marocchino/setup-terraform#readme",
   "dependencies": {
     "@actions/core": "^1.1.1",
-    "@actions/tool-cache": "^1.1.2"
+    "@actions/tool-cache": "^1.2.0"
   },
   "devDependencies": {
     "@zeit/ncc": "^0.21.0",

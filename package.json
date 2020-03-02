@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/marocchino/setup-terraform#readme",
   "dependencies": {
-    "@actions/core": "^1.2.2",
+    "@actions/core": "^1.2.3",
     "@actions/tool-cache": "^1.3.1"
   },
   "devDependencies": {

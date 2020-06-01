@@ -1,5 +1,7 @@
 # setup-terraform
 
+🚨 DPRECATED: use [hashcrops/setup-terraform](https://github.com/hashicorp/setup-terraform) instead of this.
+
 <p align="left">
   <a href="https://github.com/marocchino/setup-terraform"><img alt="GitHub Actions status" src="https://github.com/marocchino/setup-terraform/workflows/test/badge.svg"></a>
 </p>
